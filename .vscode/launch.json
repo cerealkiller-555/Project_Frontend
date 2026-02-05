@@ -4,7 +4,7 @@
             "file": "${file}",
             "name": "Html: File",
             "request": "launch",
-            "type": "chrome"
+            "type": "firefox"
         }
     ],
     "version": "0.2.0"
