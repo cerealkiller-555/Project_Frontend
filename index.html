@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">MyPortfolio</h2>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-img">
+      <h1>Hi, I'm Your Name</h1>
+      <p>A passionate Full Stack Developer</p>
+      <button class="cta-button" onclick="scrollToSection('contact')">Get In Touch</button>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/250" alt="Project 1">
+        <h3>Project One</h3>
+        <p>A web application built with HTML, CSS, and JavaScript</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/250" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>An e-commerce platform with modern design</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/250" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>A mobile-responsive portfolio website</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        <h3>HTML5</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>CSS3</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>JavaScript</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <h3>React</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
